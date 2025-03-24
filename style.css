@@ -1,0 +1,107 @@
+/* Stile Generale */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Immagine Principale */
+#main-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Box interattivi */
+.box {
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    transition: transform 0.3s ease-in-out;
+}
+.box:hover {
+    transform: scale(1.05);
+}
+
+/* Barra della Timeline */
+.timeline-bar {
+    background-color: #ddd;
+    height: 10px;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Riempimento progressivo */
+.progress-fill {
+    width: 0;
+    height: 100%;
+    background-color: #28a745;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: width 0.5s ease-in-out;
+}
+
+/* Indicatori sulla barra della timeline */
+.progress-marker {
+    position: absolute;
+    top: -5px;
+    width: 20px;
+    height: 20px;
+    background-color: #28a745;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    line-height: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+footer a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+footer a:hover {
+    color: #17a2b8;
+}
+
+/* Navbar */
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Navbar responsive */
+@media (max-width: 991px) {
+    .navbar-nav {
+        text-align: center;
+    }
+    .navbar-nav .nav-item {
+        padding: 10px 0;
+    }
+}
+
+/* Layout Mobile Ottimizzato */
+@media (max-width: 767px) {
+    #home .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    #main-image {
+        margin-bottom: 20px;
+    }
+}
